@@ -1,85 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>ASB</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="static/img/favicon.png" rel="icon">
-  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="static/vendor/aos/aos.css" rel="stylesheet">
-  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="static/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="static/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: OnePage - v4.8.1
-  * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<style>
-  html, body {
-  height: 100%;
-  margin: 0;
-}
-</style>
- <style>
-            #leftbox {
-                float:left;
-                width:50%;
-                height:400px;
-            }
-            #rightbox{
-                float:right;
-                width:50%;
-                height:400px;
-            }
-        </style>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html"><img src="static/img/logo-03.png"></a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">OUR COMPANY</a></li>
-          <li><a class="nav-link scrollto" href="#about">OUR EXPERTISE</a></li>
-          <li><a class="nav-link scrollto" href="#services">OUR PROJECTS</a></li>
-          <li><a class="nav-link scrollto o" href="#portfolio">JOIN OUR TEAM</a></li>
-          <li><a class="nav-link scrollto" href="#team">MEDIA</a></li>
-
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
+{% extends 'base.html' %}
+  
+{% block maincontent %}
+  
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center" style="height:96%">
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
@@ -209,107 +131,13 @@
         </div>
     </div>
   </div>
-    <div style="height: 140px; background-color:#A64B8D; position:relative">
-      <div class="text-center p-5" style="color:#FFFF;">
+    <div class="invite p-3">
+      <div class="text-center" style="color:#FFFF;">
           <h3>WORK WITH EXPERTS</h3>
           <div class="text-center"><button style="background-color: #262451; color: #FFFF;" class="btn" type="submit">INQUIRE</button></div>
           </div>
     </div>
 
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-top" style="background-color: #262451;">
-      <div class="container" style="color: #FFFF;">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>CONTACT US</h3>
-            <p>
-              UK <br>
-              Phone: 0000 000000<br>
-              Email: info@asb.co.uk<br>
-              Address: London, UK<br>
-              UK Registration No:14178685<br>
-            </p><br>
-            <p>
-              Qatar <br>
-              Phone: +974 3070 2322<br>
-              Email: info@asb.qa<br>
-              Address: Doha, Qatar<br>
-              Qatar Registration No: 144194<br>
-            </p>
-          </div>
-
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>EMAIL US</h4>
-            <form action="" method="post">
-              <input type="text" class="form-control mt-2">
-              <input type="text" class="form-control mt-2">
-              <input type="text" class="form-control mt-2">
-              <input type="text" class="form-control mt-2"><br>
-              <input class="btn btn-primary" type="submit" class="form-control">
-            </form>
-          </div>
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Our Comapny</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Our expertise</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Our projects</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Join Our Team</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Media</a></li>
-            </ul>
-          </div>
-
-
-        </div>
-      </div>
-    </div>
-
-<!--    <div class="container d-md-flex py-4">-->
-
-<!--      <div class="me-md-auto text-center text-md-start">-->
-<!--        <div class="copyright">-->
-<!--          &copy; Copyright <strong><span>OnePage</span></strong>. All Rights Reserved-->
-<!--        </div>-->
-<!--        <div class="credits">-->
-<!--          &lt;!&ndash; All the links in the footer should remain intact. &ndash;&gt;-->
-<!--          &lt;!&ndash; You can delete the links only if you purchased the pro version. &ndash;&gt;-->
-<!--          &lt;!&ndash; Licensing information: https://bootstrapmade.com/license/ &ndash;&gt;-->
-<!--          &lt;!&ndash; Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/ &ndash;&gt;-->
-<!--          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="social-links text-center text-md-right pt-3 pt-md-0">-->
-<!--        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>-->
-<!--        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>-->
-<!--        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>-->
-<!--        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>-->
-<!--        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>-->
-<!--      </div>-->
-<!--    </div>-->
-  </footer>
-  <!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="static/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="static/vendor/aos/aos.js"></script>
-  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="static/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="static/js/main.js"></script>
-
-</body>
-
-</html>
+  </main>
+  <!-- End #main -->
+  {% endblock maincontent %}
