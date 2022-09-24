@@ -27,12 +27,13 @@
 
           <div class="col-lg-4 col-md-4 footer-newsletter">
             <h4>EMAIL US</h4>
-            <form action="" method="post">
-              <input type="text" placeholder="NAME" class="form-control mt-2">
-              <input type="text" placeholder="EMAIL" class="form-control mt-2">
-              <input type="text" placeholder="PHONE" class="form-control mt-2">
-              <input type="text" placeholder="MESSAGE" class="form-control mt-2"><br>
-              <input style="background-color: #A64B8D; color: #FFFF;" class="btn" type="submit" class="form-control">
+            <form id="post-form" action="{% url 'emailsender' %}" method="post">
+              {% csrf_token %}
+              <input type="text" placeholder="NAME" name="name" class="name form-control mt-2" required>
+              <input type="email" placeholder="EMAIL" name="email" class="email form-control mt-2" required>
+              <input type="number" placeholder="PHONE" name="phone" class="phone form-control mt-2">
+              <input type="text" placeholder="MESSAGE" name="message" class="message form-control mt-2" required><br>
+              <input id="submit" style="background-color: #A64B8D; color: #FFFF;" class="btn" type="submit" class="form-control">
             </form>
           </div>
           <div class="col-lg-4 col-md-4 footer-links">
